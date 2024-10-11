@@ -3,6 +3,7 @@
 import { Settings } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import { useRouter } from 'next/navigation'
 
 const offeringCategories = [
   { name: "Primary Offerings", count: 11 },
@@ -38,6 +39,8 @@ const offeringCards = [
 ]
 
 export function Offerings() {
+  const router = useRouter()
+
   return (
     <div className="p-6min-h-screen">
       <div className="flex justify-between items-center mb-6">
@@ -83,11 +86,13 @@ export function Offerings() {
             <CardFooter className="flex justify-between p-4">
               <Button 
                 className="flex-1 mr-2 bg-white hover:bg-white border-blue-600 text-blue-600"
+                onClick={() => router.push('/details')}
               >
                 VIEW DETAILS
               </Button>
               <Button 
                 className="flex-1 bg-blue-600 hover:bg-blue-600 text-white"
+                onClick={() => router.push('/buy')}
               >
                 BUY
               </Button>
@@ -117,11 +122,13 @@ export function Offerings() {
             <CardFooter className="flex justify-between p-4">
             <Button 
                 className="flex-1 mr-2 bg-white hover:bg-white border-blue-600 text-blue-600"
+                onClick={() => router.push('/details')}
               >
                 VIEW DETAILS
               </Button>
               <Button 
                 className="flex-1 bg-blue-600 hover:bg-blue-600 text-white"
+                onClick={() => router.push('/buy')}
               >
                 BUY
               </Button>
