@@ -1,11 +1,12 @@
-import { NavMenu } from "@/components/nav-menu";
-import { Header } from "@/components/header";
-import { Offerings } from "@/components/offerings";
+import { redirect } from 'next/navigation'
 
 export default function Home() {
-  return (
-    <main>
-      <Offerings />
-    </main>
-  );
+  // Check if user is logged in
+  const isLoggedIn = typeof window !== 'undefined' && localStorage.getItem('isLoggedIn') === 'true'
+
+  if (isLoggedIn) {
+    redirect('/(auth)/offerings')
+  } else {
+    redirect('/login')
+  }
 }
