@@ -13,10 +13,9 @@ export function NavMenu() {
     { name: 'WALLET MANAGEMENT', icon: Wallet, path: '/wallet-management' },
     { name: 'MY PORTFOLIO', icon: LayoutGrid, path: '/portfolio' },
     { name: 'MY TRANSACTIONS', icon: CreditCard, path: '/transactions' },
+    { name: 'MARKETPLACE', icon: ShoppingCart, path: '/marketplace' },
     { name: 'NEWS / UPDATES', icon: Bell, path: '/news' },
     { name: 'CONTRACTS', icon: FileText, path: '/contracts' },
-    { name: 'MARKETPLACE', icon: ShoppingCart, path: '/marketplace' },
-    { name: 'MESSAGES', icon: MessageSquare, path: '/messages' },
     { name: 'SUPPORT', icon: HeadphonesIcon, path: '/support' },
     { name: 'SETTINGS', icon: Settings, path: '/settings' },
   ]
