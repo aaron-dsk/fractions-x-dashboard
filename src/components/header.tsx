@@ -10,13 +10,11 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { FC, HTMLAttributes } from 'react';
 
-interface HeaderProps extends HTMLAttributes<HTMLDivElement> {}
-
-export const Header: FC<HeaderProps> = ({ className, ...props }) => {
+export const Header: FC<HTMLAttributes<HTMLDivElement>> = ({ className, ...props }) => {
   return (
     <header className={`flex shadow-sm justify-end items-center space-x-2 p-4 ${className}`} {...props}>
       <Button variant="default" className="bg-blue-500 hover:bg-blue-600 text-white text-xs px-3 py-1 h-8">
-        0XB370701731DF7DA1AC6BC0B83EA485FF0CB63479
+        0xb370701731DF7DA1AC6BC0B83EA485FF0CB63479
       </Button>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
