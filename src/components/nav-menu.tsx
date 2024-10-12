@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Wallet, LayoutGrid, Home, CreditCard, Bell, FileText, ShoppingCart, MessageSquare, HeadphonesIcon, Settings } from 'lucide-react'
+import { Wallet, LayoutGrid, Home, CreditCard, Bell, FileText, ShoppingCart, HeadphonesIcon, Settings } from 'lucide-react'
 
 export function NavMenu() {
   const pathname = usePathname()

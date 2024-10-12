@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge, BadgeProps } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge"
 import { Building, Cpu, Zap, Wheat } from 'lucide-react'
 
 const BadgeVariants = {
